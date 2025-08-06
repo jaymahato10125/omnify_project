@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
-            Omnify Blog
+            Blog App
           </Link>
           
           <nav className="nav">

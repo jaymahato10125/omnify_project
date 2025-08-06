@@ -1,7 +1,7 @@
 {
   "name": "omnify-blog-backend",
   "version": "1.0.0",
-  "description": "Backend API for Omnify Blog Application",
+  "description": "Backend API for Blog App Application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

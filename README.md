@@ -1,4 +1,4 @@
-# Omnify Blog Application
+# Blog App Application
 
 A full-stack blog application built with React frontend and Node.js/Express backend, using MongoDB for data storage.
 

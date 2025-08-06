@@ -27,7 +27,7 @@ app.use('/api/blogs', require('./routes/blogs'));
 
 // Basic route
 app.get('/', (req, res) => {
-  res.json({ message: 'Omnify Blog API Server' });
+  res.json({ message: 'Blog App API Server' });
 });
 
 // MongoDB connection

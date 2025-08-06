@@ -46,7 +46,7 @@ const Home = () => {
     <div className="container">
       <section className="text-center mt-8 mb-8">
         <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>
-          Welcome to Omnify Blog
+          Welcome to Blog App
         </h1>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/blogs" className="btn" style={{ fontSize: '1.1rem', padding: '0.75rem 1.5rem' }}>
