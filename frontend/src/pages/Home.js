@@ -48,10 +48,6 @@ const Home = () => {
         <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>
           Welcome to Omnify Blog
         </h1>
-        <p style={{ fontSize: '1.25rem', color: '#6b7280', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-          Discover amazing stories, insights, and ideas from our community of writers.
-          Share your thoughts and connect with readers around the world.
-        </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link to="/blogs" className="btn" style={{ fontSize: '1.1rem', padding: '0.75rem 1.5rem' }}>
             Explore All Blogs
