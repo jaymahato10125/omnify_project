@@ -134,13 +134,3 @@ curl -X POST http://localhost:5001/api/auth/login \
 # Get all blogs (public)
 curl http://localhost:5001/api/blogs
 ```
-
-## Deployment
-
-The application is ready for deployment on Azure with multiple deployment options:
-
-- **Azure Container Instances** (Recommended)
-- **Azure App Service**
-- **Azure DevOps CI/CD Pipeline**
-
-See `DEPLOYMENT.md` for detailed deployment instructions and Azure configuration.
