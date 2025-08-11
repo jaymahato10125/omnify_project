@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
   const { user, logout, isAuthenticated } = useAuth();
+  const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -23,6 +25,10 @@ const Header = () => {
             <Link to="/blogs" className="nav-link">
               All Blogs
             </Link>
+            <button type="button" onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
+              <span className="icon">{theme === 'dark' ? '🌙' : '☀️'}</span>
+              {theme === 'dark' ? 'Dark' : 'Light'}
+            </button>
             
             {isAuthenticated ? (
               <>
