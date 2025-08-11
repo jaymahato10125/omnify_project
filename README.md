@@ -134,4 +134,3 @@ curl -X POST http://localhost:5001/api/auth/login \
 # Get all blogs (public)
 curl http://localhost:5001/api/blogs
 ```
-Hello_
