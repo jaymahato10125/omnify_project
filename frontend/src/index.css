@@ -55,6 +55,39 @@ body {
   min-height: 100vh;
 }
 
+/* ===================== Hero / Banner ===================== */
+.hero {
+  position:relative; padding: 4.5rem 1.25rem 3.5rem; text-align:center; border-radius: var(--radius-lg);
+  overflow:hidden; margin: 2rem auto 3rem; max-width: 1240px; background: linear-gradient(125deg,#6366f1 0%,#8b5cf6 35%,#06b6d4 75%,#34d399 100%);
+  color:#fff; box-shadow: var(--shadow-lg);
+}
+.hero:before, .hero:after {
+  content:""; position:absolute; width:540px; height:540px; border-radius:50%; filter: blur(90px); opacity:.28; pointer-events:none; mix-blend-mode:overlay;
+}
+.hero:before { background:#ffffff; top:-180px; left:-120px; }
+.hero:after { background:#fdf2f8; bottom:-220px; right:-160px; }
+.hero h1 { font-size: clamp(2.4rem,5vw,3.4rem); line-height:1.05; letter-spacing:.5px; font-weight:800; margin-bottom:1.1rem; }
+.hero .hero-sub { font-size: clamp(1.05rem,2.2vw,1.35rem); max-width: 780px; margin: 0 auto 2rem; font-weight: 500; line-height:1.5; color: rgba(255,255,255,.92); }
+.hero-actions { display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; }
+.badge-accent { display:inline-block; background: rgba(255,255,255,.15); color:#fff; padding:.5rem 1rem; border-radius: 999px; font-size:.75rem; letter-spacing:1.2px; font-weight:600; text-transform:uppercase; margin-bottom:1.75rem; backdrop-filter: blur(6px); }
+
+/* Animated rainbow underline utility */
+.underline-rainbow { position:relative; display:inline-block; }
+.underline-rainbow:after { content:""; position:absolute; left:0; right:0; bottom:-6px; height:4px; border-radius:4px; background: linear-gradient(90deg,#6366f1,#8b5cf6,#06b6d4,#34d399,#f59e0b,#ef4444); background-size:300% 100%; animation: rainbow-move 4.5s linear infinite; }
+@keyframes rainbow-move { 0% { background-position:0 0; } 100% { background-position:300% 0; } }
+
+/* Additional button variant */
+.btn-outline-glow { background: transparent; color: var(--color-primary); border:1.5px solid var(--color-primary); box-shadow: inset 0 0 0 0 var(--color-primary); transition: var(--transition), box-shadow var(--transition); }
+.btn-outline-glow:hover { color:#fff; box-shadow: inset 0 0 0 60px var(--color-primary); }
+.btn-glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.4); color:#fff; }
+.btn-glass:hover { background: rgba(255,255,255,.25); }
+
+@media (prefers-color-scheme: dark) {
+  .hero { background: linear-gradient(125deg,#4338ca 0%,#6d28d9 35%,#0e7490 75%,#059669 100%); }
+  .btn-outline-glow { color:#a5b4fc; border-color:#818cf8; }
+  .btn-outline-glow:hover { box-shadow: inset 0 0 0 60px #6366f1; }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

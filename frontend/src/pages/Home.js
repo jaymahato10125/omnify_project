@@ -44,15 +44,15 @@ const Home = () => {
 
   return (
     <div className="container">
-      <section className="text-center mt-8 mb-8">
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1f2937' }}>
-          Welcome to Blog App
-        </h1>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link to="/blogs" className="btn" style={{ fontSize: '1.1rem', padding: '0.75rem 1.5rem' }}>
-            Explore All Blogs
+      <section className="hero">
+        <div className="badge-accent underline-rainbow">Create . Share . Inspire</div>
+        <h1>Welcome to <span className="underline-rainbow">Blog App</span></h1>
+        <p className="hero-sub">A vibrant space where ideas take shape and voices find an audience. Dive into fresh perspectives or start crafting your own today.</p>
+        <div className="hero-actions">
+          <Link to="/blogs" className="btn" style={{ fontSize: '1rem', padding: '0.85rem 1.6rem' }}>
+            Explore Blogs
           </Link>
-          <Link to="/signup" className="btn btn-secondary" style={{ fontSize: '1.1rem', padding: '0.75rem 1.5rem' }}>
+            <Link to="/signup" className="btn btn-outline-glow" style={{ fontSize: '1rem', padding: '0.85rem 1.6rem' }}>
             Start Writing
           </Link>
         </div>
